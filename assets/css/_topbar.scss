@@ -1,0 +1,86 @@
+.topbar {
+    padding: 24px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-gray);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+}
+
+.hide-topbar-margin {
+    margin-bottom: 0;
+}
+
+.topbar__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.topbar__logo {
+    width: 63.35px;
+}
+
+.topbar__menu-icon {
+    width: 47.46px;
+}
+
+.topbar__menu--unfolded {
+    display: none;
+    background-color: var(--color-red);
+    padding-top: 35vh; 
+    position: fixed;
+    top: 96.55px;
+    // top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+
+        ul {
+            list-style: none;                         
+            li a {
+                    color: var(--color-gray);
+                    text-decoration: none;
+            }            
+         }
+    
+}    
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+};
+
+.show-menu {
+    display: block;    
+    display: flex;
+}
+
+@media screen and (min-width:1194px) {
+
+    .topbar {
+        margin-bottom: 0px;
+    }
+
+    .topbar__menu--unfolded.show-menu {
+    padding-top: 0vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    }
+}
+
+

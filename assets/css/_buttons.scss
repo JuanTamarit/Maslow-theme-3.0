@@ -1,0 +1,61 @@
+.topbar__menu-icon:hover {
+    cursor: pointer;
+}
+
+.btn {
+    font-family: 'Unbounded';
+    font-size: 20px;
+    font-weight: var(--weight-light);
+    color: var(--color-gray);
+    background-color: var(--color-red);
+    border: 0;   
+    padding: 8px;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.btn:hover, .btn:active {
+    color: var(--color-red);
+    background-color: var(--color-gray);
+    border: solid 1px var(--color-red);
+    cursor: pointer;
+}
+
+
+
+.product-component__selector {
+    appearance: none;
+    font-family: 'Unbounded';
+    font-size: 20px;
+    font-weight: var(--weight-light);
+
+    color: var(--color-black);
+    background-color: var(--color-gray);
+    border: 1px solid var(--color-black);   
+    padding: 8px;
+    width: 100%;
+
+    background-image: url('/img/flecha__desplegable.svg');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: right 12px bottom 47.5%;
+}
+
+.portal-content ul a li {
+    position: relative;
+    display: inline-block;
+}
+
+.portal-content ul a li:hover::after, .portal-content ul a li:active::after {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 0; 
+    height: 2px; 
+    background-color: var(--color-red); 
+    animation: underline-animation 0.25s ease-in-out forwards; 
+}
+
+

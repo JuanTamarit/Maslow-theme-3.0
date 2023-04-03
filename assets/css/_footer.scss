@@ -1,0 +1,46 @@
+footer {
+    background-color: var(--color-red);
+    padding: 0 24px;
+}
+
+footer ul a {
+    color: var(--color-gray);
+}
+
+footer ul {
+    list-style: none;
+    padding: 80px 0 80px 0;
+}
+
+footer ul li {
+    padding: 24px 0px;
+}
+
+footer ul li div {
+    transition: transform 0.3s ease-in-out;
+}
+
+footer ul li div:hover, footer ul li div:active {
+    transform: translateX(10px);
+}
+
+footer ul li:not(:nth-of-type(4)) {
+    border-bottom: 2px solid var(--color-gray);
+}
+
+#footer__credits {
+    color: var(--color-gray);
+    text-align: end;
+    padding-bottom: 24px;
+    opacity: 50%;
+}
+
+
+@media screen and (min-width:1194px) {
+
+    footer {
+        padding: 0 48px;
+    }
+
+}
+

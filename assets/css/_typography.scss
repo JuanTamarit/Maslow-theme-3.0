@@ -1,0 +1,59 @@
+// ESTILOS GENERALES DE TIPOGRAFÍA
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--color-black);
+    font-size: 16px;
+}
+
+.attribute {
+    color: var(--color-red);
+    font-weight: var(--weight-medium);
+}
+
+.text-serif {
+    font-size: 20px;
+    font-family: 'Petrona', serif;
+    color: var(--color-black);
+}
+
+// ESTILOS REFERENTES A TEXTOS DE LA HOME (MARGINS, COLORES ESPECÍFICOS, ETC.)
+
+.more-entries-link__container {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: var(--color-black);
+}
+
+.more-entries-link__text {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: var(--color-black);
+}
+
+.hero-section__texts {
+    margin-bottom: 40px;
+}
+
+.last-entries-section h2 {
+   text-align: center;
+   margin-bottom: 80px;
+}
+
+.last-entries-section h5 {
+    color: var(--color-black);
+    text-align: center;
+ }
+
+ .shop-section h2 {
+    text-align: center;
+    margin-bottom: 8px;
+ }
+ 
+ .shop-section h5 {
+    text-align: center;
+    margin-bottom: 80px;    
+  }
+

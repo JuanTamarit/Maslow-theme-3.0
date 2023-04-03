@@ -1,0 +1,70 @@
+// ESTILOS DEL COMPONENTE PARA LA HOME
+.product-component {
+    margin-bottom: 96px;
+
+    & img {
+        margin-bottom: 12px;
+        }
+
+    &__basic-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__basic-data h4:first-of-type {
+        text-align: left;
+    }
+
+    &__basic-data h4 {
+        text-align: center;
+        margin-bottom: 24px;    
+      }
+
+    &__description {
+        margin-bottom: 24px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+}
+
+@media screen and (min-width:1194px) {
+
+    .product-component {
+        width: calc(100% / 3.5);
+    }
+}
+
+// MODIFICACIONES DEL COMPONENTE ORIGINAL PARA LA PÁGINA DE PRODUCTO
+
+.product-page-content {
+    .product-component {
+        &__basic-data h1 {
+            font-weight: var(--weight-medium);
+            margin-bottom: 24px;
+        }
+    } 
+ }
+
+ .product-component__selectors .product-component__selector {
+    margin-bottom: 24px;
+ } 
+
+ @media screen and (min-width:1194px) {
+    .product-page-content .product-component {
+        width: 100%;
+    }
+ }
+
+ 
+ //
+
+
+
+
+
+

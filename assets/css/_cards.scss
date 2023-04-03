@@ -1,0 +1,71 @@
+.last-entries-section__card {
+    margin-bottom: 80px;
+}
+.last-entries-section__card-box {
+    border-top: 2px solid var(--color-red);
+    border-bottom: 2px solid var(--color-red);
+    margin-bottom: 12px;
+}
+
+.last-entries-section__card-box-content {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.card__date.attribute, .card__author.attribute {
+    display: flex;
+    justify-content: start;
+}
+
+.card__category.attribute {
+    display: flex;
+    justify-content: end;
+}
+
+.card__title {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+// ESTILOS DEL HOVER DE LA CARD
+div.last-entries-section__card {
+transition: transform 0.3s ease-in-out;
+}
+
+div.last-entries-section__card:hover {
+    transform: scale(1.025);
+
+}
+
+
+@media screen and (min-width:1194px) {
+
+    .last-entries-section__card {
+        width: calc(100% / 3 - 22px);
+    }
+
+}
+
+//CARDS DEL PORTAL
+
+// .last-entries-section__img-container {
+//     width: 100%;
+//     height: 250px;    
+//     margin-bottom: 12px;
+//     }
+
+.last-entries-section__img-container {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 12px;
+}
+
+.last-entries-section__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+      
+
