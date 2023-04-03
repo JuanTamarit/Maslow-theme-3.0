@@ -21,14 +21,14 @@
         <a href="/home.html"
           ><img
             class="topbar__logo"
-            src="/img/logotipo--rojo.svg"
+            src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/logotipo--rojo.svg"
             alt="logotipo de la marca"
         /></a>
         <div class="topbar__menu">
           <span class="h6">Menú</span>
           <img
             class="topbar__menu-icon"
-            src="/img/menu-hamburguesa--rojo.svg"
+            src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/menu-hamburguesa--rojo.svg"
             alt="menu hamburguesa"
           />
         </div>
@@ -69,7 +69,7 @@
 
         <div class="hero-section__image">
           <img
-            src="/img/hero_image.png"
+            src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/hero_image.png"
             alt="imagen de una chica en bici con una camiseta de la marca"
           />
         </div>
@@ -152,7 +152,7 @@
         <div class="shop-section__products">
           <div class="product-component">
             <img
-              src="/img/camiseta_jump_trasera_chico.jpg"
+              src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/camiseta_jump_trasera_chico.jpg"
               alt="camiseta modelo jump parte trasera en chico"
             />
             <div class="product-component__basic-data">
@@ -175,7 +175,7 @@
 
           <div class="product-component">
             <img
-              src="/img/camiseta_magic_trasera_chica.jpg"
+              src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/camiseta_magic_trasera_chica.jpg"
               alt="camiseta modelo jump parte trasera en chico"
             />
             <div class="product-component__basic-data">
@@ -198,7 +198,7 @@
 
           <div class="product-component">
             <img
-              src="/img/camiseta_tribe_frontal_chica.jpg"
+              src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/camiseta_tribe_frontal_chica.jpg"
               alt="camiseta modelo jump parte trasera en chico"
             />
             <div class="product-component__basic-data">

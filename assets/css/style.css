@@ -655,7 +655,7 @@ nav ul li div:hover, nav ul li div:active {
   border: 1px solid var(--color-black);
   padding: 8px;
   width: 100%;
-  background-image: url("/img/flecha__desplegable.svg");
+  background-image: url("http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/flecha__desplegable.svg");
   background-size: 16px;
   background-repeat: no-repeat;
   background-position: right 12px bottom 47.5%;
