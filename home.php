@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Petrona:ital@0;1&family=Unbounded:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <?php wp_head(); ?>
   </head>
 
   <body>
@@ -249,5 +250,6 @@
     </footer>
 
     <script src="/js/main.js"></script>
+    <?php wp_footer(); ?>
   </body>
 </html>
