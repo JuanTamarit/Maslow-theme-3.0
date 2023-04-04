@@ -17,6 +17,14 @@ p {
     color: var(--color-black);
 }
 
+.entry-page-content p:not(.attribute):not(.h5) {
+    font-size: 20px;
+    font-family: 'Petrona', serif;
+    color: var(--color-black);
+}
+
+
+
 // ESTILOS REFERENTES A TEXTOS DE LA HOME (MARGINS, COLORES ESPECÍFICOS, ETC.)
 
 .more-entries-link__container {

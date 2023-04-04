@@ -1,69 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maslow | Home</title>
-    <link rel="stylesheet" href="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Petrona:ital@0;1&family=Unbounded:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <?php wp_head(); ?>
-  </head>
-
-  <body>
-    <header>
-      <!-- TOPBAR -->
-      <div class="topbar">
-        <a href="/home.html"
-          ><img
-            class="topbar__logo"
-            src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/logotipo--rojo.svg"
-            alt="logotipo de la marca"
-        /></a>
-        <div class="topbar__menu">
-          <span class="h6">Menú</span>
-          <img
-            class="topbar__menu-icon"
-            src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/menu-hamburguesa--rojo.svg"
-            alt="menu hamburguesa"
-          />
-        </div>
-      </div>
-
-      <!-- MENÚ DESPLEGABLE -->
-      <nav class="topbar__menu--unfolded">
-        <ul class="h1">
-          <a href="/home.html"
-            ><li><div>HOME</div></li></a
-          >
-          <a href="/manifiesto.html"
-            ><li><div>MANIFIESTO</div></li></a
-          >
-          <a href="/tienda.html"
-            ><li><div>TIENDA</div></li></a
-          >
-          <a href="/portal.html"
-            ><li><div>PORTAL</div></li></a
-          >
-          <a href="/home.html"
-            ><li><div>CARRITO</div></li></a
-          >
-        </ul>
-      </nav>
-    </header>
+<?php get_header(); ?>
 
     <!-- CONTENIDO ÚNICO DE LA HOME -->
     <main class="home-content">
       <section class="hero-section">
         <div class="hero-section__texts">
-          <p class="h5">BIENVENIDX A MASLOW</p>
+          <p class="h5">BIENVENIDX A <?php bloginfo( 'name' ); ?></p>
           <p class="h1">
-            NO SOMOS UNA MARCA DE ROPA, SOMOS UN PROYECTO CON VALORES
+          <?php bloginfo( 'description' ) ?>
           </p>
           <div><a class="h6" href="manifiesto.html">> Conócenos</a></div>
         </div>
@@ -82,27 +25,28 @@
         </div>
 
         <div class="last-entries-section__cards">
+          <?php query_posts('posts_per_page=3'); ?>
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <div class="last-entries-section__card">
-            <a class="js-home-card" href="/pagina-de-entrada.html">
+            <a class="js-home-card" href="<?php the_permalink(); ?>">
               <div class="last-entries-section__card-box">
                 <div class="last-entries-section__card-box-content">
                   <time datetime="2023-03-02" class="card__date attribute"
-                    >02.03.23</time
+                    ><?php the_date(); ?></time
                   >
                   <div class="card__title">
                     <h3 class="h1-serif js-home-card__text">
-                      Reseña del libro: <br />“Vida Contemplativa: Elogio de la
-                      inactividad”, de Byung-Chul Han
+                      <?php the_title(); ?>
                     </h3>
                   </div>
-                  <span class="card__category attribute">RESEÑAS</span>
+                  <span class="card__category attribute"><?php the_category(); ?></span>
                 </div>
               </div>
-              <span class="card__author attribute">por Vicente Gómez</span>
+              <span class="card__author attribute">por <?php the_author(); ?></span>
             </a>
           </div>
 
-          <div class="last-entries-section__card">
+          <!-- <div class="last-entries-section__card">
             <div class="last-entries-section__card-box">
               <div class="last-entries-section__card-box-content">
                 <time datetime="2023-03-02" class="card__date attribute"
@@ -118,9 +62,9 @@
               </div>
             </div>
             <span class="card__author attribute">por Javier Adrián</span>
-          </div>
+          </div> -->
 
-          <div class="last-entries-section__card">
+          <!-- <div class="last-entries-section__card">
             <div class="last-entries-section__card-box">
               <div class="last-entries-section__card-box-content">
                 <time datetime="2023-03-02" class="card__date attribute"
@@ -136,7 +80,8 @@
               </div>
             </div>
             <span class="card__author attribute">por Laura Herrera</span>
-          </div>
+          </div> -->
+          <?php endwhile; endif; ?>            
         </div>
 
         <a href="/portal.html" class="more-entries-link__container"
@@ -225,31 +170,7 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-      <ul class="h5">
-        <a href=""
-          ><li>
-            <div>ÚNETE A NUESTRA COMUNIDAD EN IG:<br />@MASLOW.STREETWEAR</div>
-          </li></a
-        >
-        <a href=""
-          ><li><div>CONTACTO</div></li></a
-        >
-        <a href=""
-          ><li><div>FAQ</div></li></a
-        >
-        <a href=""
-          ><li><div>POLÍTICA DE PRIVACIDAD</div></li></a
-        >
-      </ul>
-      <p id="footer__credits">
-        Diseño y desarrollo integrales: <br />
-        Juan Tamarit
-      </p>
-    </footer>
+    <?php get_footer(); ?>
 
-    <script src="/js/main.js"></script>
-    <?php wp_footer(); ?>
-  </body>
-</html>
+
+    

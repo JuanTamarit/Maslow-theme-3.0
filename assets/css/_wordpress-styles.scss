@@ -1,0 +1,24 @@
+/* CORRECCIONES DE ESTILOS POR DEFECTO QUE AÑADE WORDPRESS */
+ul.post-categories {
+    list-style: none;
+    padding-left: 0px;
+    text-align: right;
+    font-weight: var(--weight-medium);
+  }
+
+  footer ul {
+    text-align: left;
+  }
+  
+  ul li a {
+    color: var(--color-red);
+  }
+  
+//   @media screen and (min-width: 1194px) {
+//     .componente__producto__imagen {
+//       width: 50%;
+//     }
+//     .componente__producto__datos {
+//       width: 50%;
+//     }
+//   }
