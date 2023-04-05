@@ -19,7 +19,7 @@
     <header>
       <!-- TOPBAR -->
       <div class="topbar">
-        <a href="/home.html"
+        <a href="<?php echo get_permalink(104); ?>"
           ><img
             class="topbar__logo"
             src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/logotipo--rojo.svg"
@@ -38,7 +38,7 @@
       <!-- MENÚ DESPLEGABLE -->
       <nav class="topbar__menu--unfolded">
         <ul class="h1">
-          <a href="/home.html"
+          <a href="<?php echo get_permalink(104); ?>"
             ><li><div>HOME</div></li></a
           >
           <a href="/manifiesto.html"
@@ -47,7 +47,7 @@
           <a href="/tienda.html"
             ><li><div>TIENDA</div></li></a
           >
-          <a href="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/archive.php"
+          <a href="<?php echo get_permalink(102); ?>"
             ><li><div>PORTAL</div></li></a
           >
           <a href="/home.html"
