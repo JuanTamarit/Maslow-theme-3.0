@@ -47,7 +47,7 @@
           <a href="/tienda.html"
             ><li><div>TIENDA</div></li></a
           >
-          <a href="/portal.html"
+          <a href="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/archive.php"
             ><li><div>PORTAL</div></li></a
           >
           <a href="/home.html"

@@ -104,5 +104,9 @@ add_filter('single_template', 'cargar_plantilla_producto');
 
 include_once( dirname( __FILE__ ) . '/acf/acf.php' );
 
+//FUNCION PARA ASOCIAR UNA PÁGINA A UNA PLANTILLA DETERMINADA
+add_theme_support( 'page-templates' );
+
+
 
 
