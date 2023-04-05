@@ -4,7 +4,10 @@
 
     <main class="entry-page-content">
 
-        <time datetime="2023-03-02" class="attribute"><?php the_date(); ?></time>
+        <?php if ( get_the_ID() !== 110 ) : ?>
+        <time datetime="2023-03-02" class="attribute"><?php echo get_the_date(); ?></time>
+        <?php endif; ?>
+
 
         <h1 class="h1-serif"><?php the_title(); ?></h1>
 
