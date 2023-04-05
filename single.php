@@ -11,7 +11,9 @@
 
         <h1 class="h1-serif"><?php the_title(); ?></h1>
 
-        <p class="attribute">por <?php the_author(); ?></p>
+        <?php if ( get_the_ID() !== 110 ) : ?>
+        <p class="attribute">por <?php echo get_the_author(); ?></p>
+        <?php endif; ?>
 
         <div class="entry-page__image-container">
             <?php if ( has_post_thumbnail() ) { ?>
