@@ -41,7 +41,7 @@
           <a href="<?php echo get_permalink(104); ?>"
             ><li><div>HOME</div></li></a
           >
-          <a href="/manifiesto.html"
+          <a href="<?php echo get_permalink(110); ?>"
             ><li><div>MANIFIESTO</div></li></a
           >
           <a href="/tienda.html"
