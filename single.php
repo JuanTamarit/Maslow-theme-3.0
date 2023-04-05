@@ -10,9 +10,12 @@
 
         <p class="attribute">por <?php the_author(); ?></p>
 
-        <?php if ( has_post_thumbnail() ) { ?>
-        <img src="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" alt="imagen de un bosque por la mañana en otoño">
-        <?php } ?>
+        <div class="entry-page__image-container">
+            <?php if ( has_post_thumbnail() ) { ?>
+            <img src="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" alt="imagen de un bosque por la mañana en otoño">
+            <?php } ?>
+            <span class="photo-caption"><?php echo get_field('photo-caption'); ?></span>
+        </div>
 
         <?php the_content(); ?>
 

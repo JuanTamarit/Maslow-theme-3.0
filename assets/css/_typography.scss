@@ -23,6 +23,12 @@ p {
     color: var(--color-black);
 }
 
+.entry-page-content p:not(.h5--align-left) {
+    font-size: 20px;
+    font-family: 'Petrona', serif;
+    color: var(--color-black);
+}
+
 
 
 // ESTILOS REFERENTES A TEXTOS DE LA HOME (MARGINS, COLORES ESPECÍFICOS, ETC.)
