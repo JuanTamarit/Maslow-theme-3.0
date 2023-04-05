@@ -108,74 +108,46 @@
         </div>
 
         <div class="shop-section__products">
-          <div class="product-component">
-            <img
-              src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/camiseta_jump_trasera_chico.jpg"
-              alt="camiseta modelo jump parte trasera en chico"
-            />
-            <div class="product-component__basic-data">
-              <h4 class="h5">CAMISETA "JUMP"</h4>
-              <h4 class="h5">22€</h4>
-            </div>
-            <p class="product-component__description">
-              Salta al vacío, haz aquello que quieres hacer y no te atreves.
-              Inspirada en esos momentos de adrenalina que se dan cuando dejas
-              de ponerte excusas y en movimientos estéticos como el brutalismo y
-              el retrowave.
-            </p>
-            <div class="product-component__links">
-              <a href=""><span class="attribute">SABER +</span></a>
-              <a href="/pagina-de-producto.html"
-                ><span class="attribute">COMPRAR</span></a
-              >
-            </div>
-          </div>
+          
+        <?php
+            $args = array(
+                'post_type' => 'product',
+                'posts_per_page' => 3,
+            );
+            $query = new WP_Query( $args );
+            if ( $query->have_posts() ) {
+                while ( $query->have_posts() ) {
+                    $query->the_post();
+
+                    $title = get_the_title();
+                    $description = get_the_content();
+                    $price = get_post_meta( get_the_ID(), '_regular_price', true );
+                    $image = get_the_post_thumbnail_url();
+            ?>
 
           <div class="product-component">
-            <img
-              src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/camiseta_magic_trasera_chica.jpg"
-              alt="camiseta modelo jump parte trasera en chico"
-            />
-            <div class="product-component__basic-data">
-              <h4 class="h5">CAMISETA "MAGIC"</h4>
-              <h4 class="h5">25€</h4>
-            </div>
-            <p class="product-component__description">
-              Inspirada en la potente idea de que somos más capaces de lo que
-              creemos, lo sintamos o no. Cada persona tiene un potencial enorme.
-              No esperes a que los factores externos llenen tu vida de sentido.
-              Sé tú quien lo haga.
-            </p>
-            <div class="product-component__links">
-              <a href=""><span class="attribute">SABER +</span></a>
-              <a href="/pagina-de-producto.html"
-                ><span class="attribute">COMPRAR</span></a
-              >
-            </div>
+
+                    <img src="<?php echo $image; ?>" alt="<?php echo $title; ?>" />
+                    <div class="product-component__basic-data">
+                        <h4 class="h5"><?php echo $title; ?></h4>
+                        <h4 class="h5"><?php echo $price; ?>€</h4>
+                    </div>
+                    <p class="product-component__description"><?php echo $description; ?></p>
+                    <div class="product-component__links">
+                        <a href=""><span class="attribute">SABER +</span></a>
+                        <a href="<?php echo get_permalink(); ?>"><span class="attribute">COMPRAR</span></a>
+                    </div>         
+
           </div>
 
-          <div class="product-component">
-            <img
-              src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/camiseta_tribe_frontal_chica.jpg"
-              alt="camiseta modelo jump parte trasera en chico"
-            />
-            <div class="product-component__basic-data">
-              <h4 class="h5">CAMISETA "TRIBE"</h4>
-              <h4 class="h5">20€</h4>
-            </div>
-            <p class="product-component__description">
-              Encuentra tu tribu, tu red de apoyo, aquellas personas con las que
-              puedes ser tú mismo sin preocuparte por lo que piensen de ti.
-              Representa uno de los valores más potentes de nuestro proyecto:
-              Comunidad.
-            </p>
-            <div class="product-component__links">
-              <a href=""><span class="attribute">SABER +</span></a>
-              <a href="/pagina-de-producto.html"
-                ><span class="attribute">COMPRAR</span></a
-              >
-            </div>
-          </div>
+          <?php
+                }
+                wp_reset_postdata();
+            } else {
+                echo 'No se encontraron productos';
+            }
+            ?>
+
         </div>
 
         <!-- <a href="/portal.html" class="more-entries-link__container">(<span class="more-entries-link__text">Más entradas</span>)</a> -->

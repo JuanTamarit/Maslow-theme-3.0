@@ -49,44 +49,7 @@ function maslow_setup_widgets() {
 }
 add_action( 'widgets_init', 'maslow_setup_widgets' );
 
-//CREAR TIPO DE ENTRADA PERSONALIZADO PARA LAS CAMISETAS
 
-function crear_tipo_entrada_personalizado() {
-    $labels = array(
-        'name' => 'Productos',
-        'singular_name' => 'Producto',
-        'add_new' => 'Agregar nuevo',
-        'add_new_item' => 'Agregar nuevo producto',
-        'edit_item' => 'Editar producto',
-        'new_item' => 'Nuevo producto',
-        'all_items' => 'Todos los productos',
-        'view_item' => 'Ver producto',
-        'search_items' => 'Buscar productos',
-        'not_found' =>  'No se encontraron productos',
-        'not_found_in_trash' => 'No se encontraron productos en la papelera',
-        'parent_item_colon' => '',
-        'menu_name' => 'Productos'
-    );
-
-    $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'publicly_queryable' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'query_var' => true,
-        'rewrite' => array( 'slug' => 'producto' ),
-        'capability_type' => 'post',
-        'has_archive' => true,
-        'hierarchical' => false,
-        'menu_position' => 5,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-        'taxonomies' => array( 'category' )
-    );
-
-    register_post_type( 'producto', $args );
-}
-add_action( 'init', 'crear_tipo_entrada_personalizado' );
 
 //FUNCIÓN PARA CARGAR SINGLE-PRODUCTO.PHP CUANDO PRETENDO ABRIR LAS ENTRADAS DEL PRODUCTO
 
