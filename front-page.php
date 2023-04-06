@@ -135,7 +135,8 @@
                     <p class="product-component__description"><?php echo $description; ?></p>
                     <div class="product-component__links">
                         <a href=""><span class="attribute">SABER +</span></a>
-                        <a href="<?php echo get_permalink($product_id); ?>"><span class="attribute">COMPRAR</span></a>
+                        <a href="<?php echo esc_url( get_permalink( $product_id ) ); ?>"><span class="attribute">COMPRAR</span></a>
+
 
                     </div>         
 

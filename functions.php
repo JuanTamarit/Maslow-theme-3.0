@@ -70,6 +70,20 @@ include_once( dirname( __FILE__ ) . '/acf/acf.php' );
 //FUNCION PARA ASOCIAR UNA PÁGINA A UNA PLANTILLA DETERMINADA
 add_theme_support( 'page-templates' );
 
+//WOOCOMERCE
+
+//Eliminar la categoría de la pagina de producto
+function remove_product_category() {
+    remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+}
+add_action( 'wp', 'remove_product_category' );
+
+//Sustituir descripción corta por larga
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 20 );
+
+
+
 
 
 
