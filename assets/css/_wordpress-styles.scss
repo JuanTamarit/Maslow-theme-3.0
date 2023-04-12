@@ -63,6 +63,8 @@ ul.post-categories {
   transition: all 0.1s ease-in-out;
 }
 
+
+
 // @media screen and (min-width: 1194px) {
 //   .product-component {
 //     display: flex;
@@ -70,10 +72,15 @@ ul.post-categories {
 //   }
 // }
 
-.woocommerce-product-gallery__trigger {
-  display: none;
-  opacity: 0;
+// a.btn {
+//   margin-top: 24px;
+// }
+
+.product-component__buy-button-container {
+  margin-top: 8px;
 }
+
+
 
 .woocomerce-Tabs-panel h2 {
   display: none;

@@ -62,29 +62,31 @@
                                 <option value="<?php echo $term; ?>"><?php echo $term; ?></option>
                         <?php }
                         } ?>
-                    </select>
+                    </select>                   
 
-                    <?php
+                </div>
+
+                <div class="product-component__buy-button-container">
+                <?php
                     function imprimir_boton_anadir_al_carrito() {
                         global $product;
                         woocommerce_template_loop_add_to_cart( array(
-                            'quantity'   => 1,  // Cantidad predeterminada es 1.
-                            'class'      => 'btn', // Clase CSS del botón.
+                            'quantity'   => 1,  
+                            'class'      => 'btn',
                             'attributes' => array(
-                                'data-product_id'  => $product->get_id(), // ID del producto.
-                                'data-product_sku' => $product->get_sku(), // SKU del producto.
-                                'aria-label'       => $product->add_to_cart_description(), // Descripción para accesibilidad.
-                                'rel'              => 'nofollow', // Atributo rel del enlace.
+                                'data-product_id'  => $product->get_id(), 
+                                'data-product_sku' => $product->get_sku(), 
+                                'aria-label'       => $product->add_to_cart_description(), 
+                                'rel'              => 'nofollow', 
                             ),
                         ) );
                     }
                     imprimir_boton_anadir_al_carrito();
                     ?>
-
                 </div>
 
             </div>
-            
+
         </div>
     </main>
     

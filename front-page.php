@@ -46,48 +46,11 @@
             </a>
           </div>
 
-          <!-- <div class="last-entries-section__card">
-            <div class="last-entries-section__card-box">
-              <div class="last-entries-section__card-box-content">
-                <time datetime="2023-03-02" class="card__date attribute"
-                  >02.03.23</time
-                >
-                <div class="card__title">
-                  <h3 class="h1-serif">
-                    Guía de consejos útiles: <br />reciclar sin morir en el
-                    intento en época de vacas flacas
-                  </h3>
-                </div>
-                <span class="card__category attribute">ARTÍCULOS</span>
-              </div>
-            </div>
-            <span class="card__author attribute">por Javier Adrián</span>
-          </div> -->
+          <?php endwhile; endif; ?>         
 
-          <!-- <div class="last-entries-section__card">
-            <div class="last-entries-section__card-box">
-              <div class="last-entries-section__card-box-content">
-                <time datetime="2023-03-02" class="card__date attribute"
-                  >02.03.23</time
-                >
-                <div class="card__title">
-                  <h3 class="h1-serif">
-                    Disminuye el consumo de carne entre la población europea
-                    según un estudio de la ASCE
-                  </h3>
-                </div>
-                <span class="card__category attribute">NOTÍCIAS</span>
-              </div>
-            </div>
-            <span class="card__author attribute">por Laura Herrera</span>
-          </div> -->
-          <?php endwhile; endif; ?>            
         </div>
 
-        <!-- LINK ORIGINAL -->
-        <!-- <a href="/portal.html" class="more-entries-link__container"
-          >(<span class="more-entries-link__text">Más entradas</span>)</a
-        > -->
+    
 
         <a href="<?php
           $page = get_page_by_title( 'Portal' );
