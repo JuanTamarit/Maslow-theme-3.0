@@ -1,16 +1,39 @@
-<?php get_header(); the_post(); ?>
+<?php get_header(); ?>
 
 
-    <!-- CONTENIDO ÚNICO DE LA PÁGINA DE PRODUCTO -->
-    <main class="product-page-content">
+    <?php
 
-    <p class="breadcrumbs">Tienda > <?php the_title(); ?></p>
+		if ( ! defined( 'ABSPATH' ) ) {
+			exit; // Exit if accessed directly
+		}
 
-    <h1><?php the_title(); ?></h1>
+    get_header( 'shop' ); ?>
 
-    <?php the_content(); ?>
+	<?php
+		/*
+		 * woocommerce_before_main_content hook.
+		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+		 * @hooked woocommerce_breadcrumb - 20
+		 */
+		do_action( 'woocommerce_before_main_content' );
+	?>
 
-    </main>
-    
-    <?php get_footer(); ?>
+	<?php while ( have_posts() ) : ?>
 
+		<?php the_post(); ?>
+
+		<?php wc_get_template_part( 'content', 'single-product' ); ?>
+
+	<?php endwhile; ?>
+
+	<?php
+		/*
+		 * woocommerce_after_main_content hook.
+		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+		 */
+		do_action( 'woocommerce_after_main_content' );
+	?>
+
+
+<?php get_footer(); 
+/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
