@@ -63,12 +63,12 @@ ul.post-categories {
   transition: all 0.1s ease-in-out;
 }
 
-@media screen and (min-width: 1194px) {
-  .product-component {
-    display: flex;
-    flex-direction: row;
-  }
-}
+// @media screen and (min-width: 1194px) {
+//   .product-component {
+//     display: flex;
+//     flex-direction: row;
+//   }
+// }
 
 .woocommerce-product-gallery__trigger {
   display: none;
