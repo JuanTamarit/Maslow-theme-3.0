@@ -27,20 +27,41 @@
                 </p>              
                                                 
                 <div class="product-component__selectors">
+
+                                    <?php
+                    $product_id = get_the_ID();
+                    $product_attributes = $product->get_attributes();
+
+                    if (isset($product_attributes['pa_talla'])) {
+                        $terms = wc_get_product_terms($product_id, 'pa_talla', array('fields' => 'names'));
+                    }
+                    ?>
+
                     <select class="product-component__selector" name="talla">
                         <option value="TALLA">TALLA</option>
-                        <option value="S">S</option>
-                        <option value="M" selected>M</option>
-                        <option value="L">L</option>
+                        <?php if (isset($terms)) {
+                            foreach ($terms as $term) { ?>
+                                <option value="<?php echo $term; ?>"><?php echo $term; ?></option>
+                        <?php }
+                        } ?>
                     </select> 
                     
+                                        <?php
+                    $product_id = get_the_ID();
+                    $product_attributes = $product->get_attributes();
+
+                    if (isset($product_attributes['pa_cantidad'])) {
+                        $terms = wc_get_product_terms($product_id, 'pa_cantidad', array('fields' => 'names'));
+                    }
+                    ?>
+
                     <select class="product-component__selector" name="cantidad">
                         <option value="CANTIDAD">CANTIDAD</option>
-                        <option value="1">1</option>
-                        <option value="2" selected>2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+                        <?php if (isset($terms)) {
+                            foreach ($terms as $term) { ?>
+                                <option value="<?php echo $term; ?>"><?php echo $term; ?></option>
+                        <?php }
+                        } ?>
                     </select>
 
                     <?php
@@ -63,6 +84,7 @@
                 </div>
 
             </div>
+            
         </div>
     </main>
     
