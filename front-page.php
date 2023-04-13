@@ -8,7 +8,7 @@
           <p class="h1">
           <?php bloginfo( 'description' ) ?>
           </p>
-          <div><a class="h6" href="manifiesto.html">> Conócenos</a></div>
+          <div><a class="h6" href="<?php echo get_permalink(110); ?>">> Conócenos</a></div>
         </div>
 
         <div class="hero-section__image">

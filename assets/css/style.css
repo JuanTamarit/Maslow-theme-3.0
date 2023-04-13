@@ -422,13 +422,7 @@ p {
   color: var(--color-black);
 }
 
-.entry-page-content p:not(.attribute):not(.h5) {
-  font-size: 20px;
-  font-family: "Petrona", serif;
-  color: var(--color-black);
-}
-
-.entry-page-content p:not(.attribute):not(.h4) {
+.entry-page-content p:not(.attribute):not(h4):not(h5) {
   font-size: 20px;
   font-family: "Petrona", serif;
   color: var(--color-black);
@@ -1048,4 +1042,8 @@ bdi {
 
 .woocomerce-Tabs-panel h2 {
   display: none;
+}
+
+.entry-page-content h1:not(.h1-serif) {
+  margin-bottom: 48px;
 }

@@ -44,7 +44,7 @@
           <a href="<?php echo get_permalink(110); ?>"
             ><li><div>MANIFIESTO</div></li></a
           >
-          <a href="/tienda.html"
+          <a href="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/tienda.html"
             ><li><div>TIENDA</div></li></a
           >
           <a href="<?php echo get_permalink(102); ?>"

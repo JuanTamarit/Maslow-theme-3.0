@@ -23,7 +23,7 @@
                     <div class="last-entries-section__card-box">
                         <div class="last-entries-section__card-box-content">
                             <div class="last-entries-section__img-container">
-                                <img class="last-entries-section__img" src="/img/portada_resena_libro.jpeg" alt="">
+                                <img class="last-entries-section__img" src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/portada_resena_libro.jpeg" alt="">
                             </div>
                             <time datetime="2023-03-02" class="card__date attribute">02.03.23</time>
                             <div class="card__title"><h3 class="h1-serif js-home-card__text">Reseña del libro: <br>“Vida Contemplativa: Elogio de la inactividad”, de Byung-Chul Han</h3></div>
@@ -38,7 +38,7 @@
                 <div class="last-entries-section__card-box">
                     <div class="last-entries-section__card-box-content">
                         <div class="last-entries-section__img-container">
-                            <img class="last-entries-section__img" src="/img/portada_reciclar.jpg" alt="">
+                            <img class="last-entries-section__img" src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/portada_reciclar.jpg" alt="">
                         </div>
                         <time datetime="2023-03-02" class="card__date attribute">02.03.23</time>
                         <div class="card__title"><h3 class="h1-serif">Guía de consejos útiles: <br>reciclar sin morir en el intento en época de vacas flacas</h3></div>
@@ -52,7 +52,7 @@
                 <div class="last-entries-section__card-box">
                     <div class="last-entries-section__card-box-content">
                         <div class="last-entries-section__img-container">
-                            <img class="last-entries-section__img" src="/img/portada_noticia_carne.jpg" alt="">
+                            <img class="last-entries-section__img" src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/portada_noticia_carne.jpg" alt="">
                         </div>
                         <time datetime="2023-03-02" class="card__date attribute">02.03.23</time>
                         <div class="card__title"><h3 class="h1-serif">Disminuye el consumo de carne entre la población europea según un estudio de la ASCE</h3></div>
@@ -66,10 +66,10 @@
                 <div class="last-entries-section__card-box">
                     <div class="last-entries-section__card-box-content">
                         <div class="last-entries-section__img-container">
-                            <img class="last-entries-section__img" src="/img/portada_noticia_carne.jpg" alt="">
+                            <img class="last-entries-section__img" src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/arbol.jpg" alt="">
                         </div>
                         <time datetime="2023-03-02" class="card__date attribute">02.03.23</time>
-                        <div class="card__title"><h3 class="h1-serif">Disminuye el consumo de carne entre la población europea según un estudio de la ASCE</h3></div>
+                        <div class="card__title"><h3 class="h1-serif">Descubriendo los secretos de la biodiversidad con ‘La vida secreta de los árboles’, de Peter Wohlleben</h3></div>
                         <span class="card__category attribute">NOTÍCIAS</span>
                     </div>
                 </div>
@@ -80,10 +80,11 @@
                 <div class="last-entries-section__card-box">
                     <div class="last-entries-section__card-box-content">
                         <div class="last-entries-section__img-container">
-                            <img class="last-entries-section__img" src="/img/portada_noticia_carne.jpg" alt="">
+                            <img class="last-entries-section__img" src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/ciudad.jpg" alt="">
                         </div>
                         <time datetime="2023-03-02" class="card__date attribute">02.03.23</time>
-                        <div class="card__title"><h3 class="h1-serif">Disminuye el consumo de carne entre la población europea según un estudio de la ASCE</h3></div>
+                        <div class="card__title"><h3 class="h1-serif">Viajando por el mundo sin salir de casa: Lecciones de cultura y humanidad de 'Las ciudades invisibles', de Italo Calvino
+</h3></div>
                         <span class="card__category attribute">NOTÍCIAS</span>
                     </div>
                 </div>
@@ -94,10 +95,11 @@
                 <div class="last-entries-section__card-box">
                     <div class="last-entries-section__card-box-content">
                         <div class="last-entries-section__img-container">
-                            <img class="last-entries-section__img" src="/img/portada_reciclar.jpg" alt="">
+                            <img class="last-entries-section__img" src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/images/cerebro.jpg" alt="">
                         </div>
                         <time datetime="2023-03-02" class="card__date attribute">02.03.23</time>
-                        <div class="card__title"><h3 class="h1-serif">Guía de consejos útiles: <br>reciclar sin morir en el intento en época de vacas flacas</h3></div>
+                        <div class="card__title"><h3 class="h1-serif">Explorando la mente humana: Descubre los secretos de la memoria con 'El cerebro de Broca', de Carl Sagan
+</h3></div>
                         <span class="card__category attribute">ARTÍCULOS</span>
                     </div>
                 </div>
