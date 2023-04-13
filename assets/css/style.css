@@ -422,7 +422,7 @@ p {
   color: var(--color-black);
 }
 
-.entry-page-content p:not(.attribute):not(.h4):not(.h5) {
+.entry-page-content p:not(.attribute):not(.h4):not(.h5):not(.h5--align-left) {
   font-size: 20px;
   font-family: "Petrona", serif;
   color: var(--color-black);
@@ -1005,6 +1005,7 @@ bdi {
   color: var(--color-red);
   font-weight: var(--weight-regular);
   text-align: left;
+  margin: 48px 0px 48px 0px;
 }
 
 @media screen and (min-width: 1194px) {
@@ -1046,4 +1047,10 @@ bdi {
 
 .entry-page-content h1:not(.h1-serif) {
   margin-bottom: 48px;
+}
+
+@media screen and (min-width: 1194px) {
+  .entry-page-content h1:not(.h1-serif) {
+    text-align: center;
+  }
 }
