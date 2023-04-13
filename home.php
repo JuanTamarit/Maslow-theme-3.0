@@ -95,7 +95,7 @@
                 <div class="last-entries-section__card-box">
                     <div class="last-entries-section__card-box-content">
                         <div class="last-entries-section__img-container">
-                            <img class="last-entries-section__img" src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/images/cerebro.jpg" alt="">
+                            <img class="last-entries-section__img" src="http://localhost:8888/wordpress-maslow/wp-content/themes/maslow-3.0/img/cerebro.jpg" alt="">
                         </div>
                         <time datetime="2023-03-02" class="card__date attribute">02.03.23</time>
                         <div class="card__title"><h3 class="h1-serif">Explorando la mente humana: Descubre los secretos de la memoria con 'El cerebro de Broca', de Carl Sagan
